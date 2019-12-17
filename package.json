@@ -1,0 +1,13 @@
+{
+  "name": "promissary",
+  "version": "0.1.0",
+  "description": "A tiny wrapper around promises for building asynchronous tasks",
+  "main": "dist/promissary.js",
+  "repository": "https://github.com/velll/promissary",
+  "author": "Paul <paul@paulgoesdeep.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  }
+}
