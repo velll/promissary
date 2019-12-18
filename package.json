@@ -6,7 +6,11 @@
   "repository": "https://github.com/velll/promissary",
   "author": "Paul <paul@paulgoesdeep.com>",
   "license": "MIT",
-  "private": true,
+  "keywords": [
+    "promise",
+    "async",
+    "wrapper"
+  ],
   "devDependencies": {
     "@types/jest": "^24.0.24",
     "jest": "^24.9.0",
