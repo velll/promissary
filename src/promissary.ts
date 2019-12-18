@@ -8,9 +8,9 @@ a constructor of a promise.
 */
 
 class Promissary<T> {
+
   public resolve: (value: T) => void;
   public reject: (value: T) => void;
-
   private promise: Promise<T>;
 
   constructor() {
