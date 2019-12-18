@@ -1,6 +1,6 @@
 {
   "name": "promissary",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A tiny library for manually resolving promises",
   "main": "dist/promissary.js",
   "repository": "https://github.com/velll/promissary",
