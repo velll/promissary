@@ -5,24 +5,22 @@ This doesn't really achieve anything except organizing the code
 a little more neatly — not requiring you to put everything in
 a constructor of a promise.
 
-.fulfil() resolves the promise
-.dismiss() rejects it
 */
 
 class Promissary<T> {
-  public fulfil: (value: T) => void;
-  public dismiss: (value: T) => void;
+  public resolve: (value: T) => void;
+  public reject: (value: T) => void;
 
   private promise: Promise<T>;
 
   constructor() {
     this.promise = new Promise<T>((resolve, reject) => {
-      this.fulfil = resolve;
-      this.dismiss = reject;
+      this.resolve = resolve;
+      this.reject = reject;
     });
   }
 
-  public get() {
+  public getPromise() {
     return this.promise;
   }
 }
