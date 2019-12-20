@@ -13,5 +13,6 @@ steps:
   - yarn install
   - yarn jest
   - yarn tslint -p .
+  - yarn tsc
   environment:
     LANG: "C.UTF-8"
