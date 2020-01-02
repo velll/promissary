@@ -1,6 +1,6 @@
 {
   "name": "promissary",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A tiny library for manually resolving promises",
   "main": "dist/promissary.js",
   "types": "dist/promissary.d.ts",
