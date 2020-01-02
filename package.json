@@ -12,6 +12,10 @@
     "async",
     "wrapper"
   ],
+  "files": [
+    "dist/*",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@types/jest": "^24.0.24",
     "jest": "^24.9.0",
