@@ -1,4 +1,4 @@
-import { Promissary } from '../../src/promissary';
+import Promissary from '../../src/promissary';
 
 // an example implementation
 class SomeTask {
@@ -12,19 +12,19 @@ class SomeTask {
   public run() {
     this.finished.resolve(true);
 
-    return this.finished.getPromise();
+    return this.finished.promise;
   }
 
   public runSlow() {
     setTimeout(this.finished.resolve, SomeTask.timeout, true);
 
-    return this.finished.getPromise();
+    return this.finished.promise;
   }
 
   public fail() {
     this.finished.reject(false);
 
-    return this.finished.getPromise();
+    return this.finished.promise;
   }
 }
 

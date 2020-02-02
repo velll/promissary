@@ -1,6 +1,6 @@
 {
   "name": "promissary",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A tiny library for manually resolving promises",
   "main": "dist/promissary.js",
   "types": "dist/promissary.d.ts",
@@ -13,8 +13,7 @@
     "wrapper"
   ],
   "files": [
-    "dist/*",
-    "LICENSE"
+    "dist/*"
   ],
   "devDependencies": {
     "@types/jest": "^24.0.24",

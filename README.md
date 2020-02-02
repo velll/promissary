@@ -16,6 +16,10 @@ Q: ES6 Promises work. Why would anybody want to resolve them manually?
 A: When using `requestAnimationFrame`, `setTimeout` or such you just don't have enough control to put everything in the Promise constructor. Well, you can of course, but I ended up with a messy code. So I built a wrapper around Promises to resolve them manually for this extra bit of flexibility.
 
 # Usage
+```
+import Promissary from 'promissary';
+```
+
 For the love of god, please define a _promissary_ as private. You don't want anybody outside of your task to resolve it, do you?
 
 ```
@@ -52,7 +56,7 @@ Make a public method returning the promise
 ```
   public run() {
     this.doTheWork();
-    return this.finished.getPromise();
+    return this.finished.promise;
   }
 ```
 
